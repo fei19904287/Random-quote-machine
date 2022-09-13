@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
+import { SocialIcon } from "react-social-icons";
 
 function App() {
   const friendsUrl = "https://friends-quotes-api.herokuapp.com/quotes/random";
@@ -34,14 +35,38 @@ function App() {
   return (
     <div className="App">
       <div id="quote-box">
-        <div id="text">{post}</div>
-        <div id="author">{author}</div>
-        <button id="new-quote" onClick={handleClick}>
-          new-quote
-        </button>
-        <a id="tweet-quote" href="www.google.com">
-          tweet
-        </a>
+        <div id="text" style={{ margin: 10 }}>
+          <h3>{post}</h3>
+        </div>
+        <div
+          id="author"
+          style={{ marginLeft: 300, marginRight: 10, color: "yellow" }}
+        >
+          <h4>--- {author}</h4>
+        </div>
+
+        <div id="newQuoteandIcon">
+          <button
+            id="new-quote"
+            style={{ marginLeft: 300, marginRight: 10 }}
+            onClick={handleClick}
+          >
+            New-quote
+          </button>
+          <a
+            id="tweet-quote"
+            target="_top"
+            href={`https://twitter.com/intent/tweet?text="+${post}+"+ --- +${author}
+        `}
+          >
+            <SocialIcon
+              id="tticon"
+              network="twitter"
+              fgColor="lightblue"
+              style={{ width: 20, height: 20 }}
+            />
+          </a>
+        </div>
       </div>
     </div>
   );
