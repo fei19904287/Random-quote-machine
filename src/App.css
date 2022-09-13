@@ -28,3 +28,8 @@ body {
   justify-content: center;
   background-color: aliceblue;
 } */
+#footer {
+  background-color: aqua;
+  margin-left: 80%;
+  width: 30%;
+}

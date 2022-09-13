@@ -68,6 +68,9 @@ function App() {
           </a>
         </div>
       </div>
+      <div id="footer" style={{ width: 120 }}>
+        <h4>---by fei19904287</h4>
+      </div>
     </div>
   );
 }
