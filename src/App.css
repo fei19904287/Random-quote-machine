@@ -2,16 +2,19 @@
 
         flex-direction:column;
         display: flex;
-        justify-content: center;
+        justify-content:center;
         align-items: center;
-        width: 600px;
-        height: 200px;
+        width: 350px;
+        height: 150px;
         border: 3px solid green;
-        background-color: aqua;
-        position: fixed;
+        background-color: lightcyan;
+/*        
   top: 50%;
-  left: 50%;
-  margin-top: -150px;
-  margin-left: -300px;
+  left:50%; */
+  margin-top: 200px;
+  margin-right: 50px;
 
+}
+body {
+    background-image:url("../assets/friends-bimg.jpeg");
 }
